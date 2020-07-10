@@ -59,6 +59,7 @@ body {
   padding-top: 7px;
   padding-bottom: 7px;
   color: var(--accent-color);
+  white-space: nowrap;
   transition: background-color 0.5s ease-in-out;
 }
 .box-btn:hover {
@@ -164,6 +165,9 @@ body {
   object-fit: contain;
 }
 /* Song section style */
+.nav-pills .nav-link.active {
+  background-color: var(--accent-color);
+}
 /* Latest Tracks section style */
 .latest-track-info {
   background-color: #0d0c0c;
