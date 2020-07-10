@@ -200,7 +200,7 @@ body {
 }
 /* Latest Tracks section style */
 .latest-track-info {
-  background-color: #0d0c0c;
+  background-color: rgba(0, 0, 0, 0.8);
   padding-top: 20px;
   padding-bottom: 20px;
 }
