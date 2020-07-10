@@ -85,6 +85,9 @@ body {
   color: var(--accent-color);
   font-weight: 600;
 }
+.navbar .nav-item > a.nav-link:hover {
+  color: var(--accent-color);
+}
 .bg-black {
   background-color: black;
 }
