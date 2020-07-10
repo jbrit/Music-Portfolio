@@ -15,6 +15,9 @@
 *::selection {
   background-color: rgba(0, 0, 0, 0.5); /*rgba(230, 108, 40, 0.5); */
 }
+body {
+  overflow-x: hidden;
+}
 /* Font Classes */
 .f-10 {
   font-size: 10px;
@@ -56,6 +59,7 @@
   padding-top: 7px;
   padding-bottom: 7px;
   color: var(--accent-color);
+  transition: background-color 0.5s ease-in-out;
 }
 .box-btn:hover {
   background-color: var(--accent-color);
@@ -150,6 +154,14 @@
   width: 80px;
   border-radius: 50%;
   border: 2px solid #e66c28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat-circle img {
+  height: 48px;
+  width: 56px;
+  object-fit: contain;
 }
 /* Song section style */
 /* Latest Tracks section style */
