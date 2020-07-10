@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --white: #ffffff;
+  --accent-color: #e66c28;
+  --home-bg: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--white);
+  font-family: "Raleway", sans-serif;
+}
+*::selection {
+  background-color: rgba(0, 0, 0, 0.5); /*rgba(230, 108, 40, 0.5); */
+}
+/* Font Classes */
+.f-10 {
+  font-size: 10px;
+}
+.f-12 {
+  font-size: 12px;
+}
+.f-14 {
+  font-size: 14px;
+}
+.f-18 {
+  font-size: 18px;
+}
+.f-24 {
+  font-size: 24px;
+  line-height: 28px;
+}
+.f-36 {
+  font-size: 36px;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.highlight {
+  color: var(--accent-color);
+}
+/* Buttons */
+.btn {
+  border: 2px solid var(--accent-color);
+  border-radius: 0;
+}
+.box-btn {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: var(--accent-color);
+}
+.box-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+/* Images */
+.img-fill-container {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* Nav section */
+.navbar .nav-item > a.nav-link {
+  white-space: nowrap;
+  color: var(--white);
+}
+.navbar .nav-item.active > a.nav-link {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+.section-home {
+}
+
+/* Landing section style */
+.landing-div {
+  background-image: var(--home-bg), url("../images/mainbg.png");
+  min-height: 100vh;
+  padding-top: 105px;
+}
+.arrow-drop {
+  height: 28px;
+  width: 28px;
+  float: right;
+  cursor: pointer;
+}
+.arrow-drop-holder {
+  bottom: 79px;
+  right: calc(50vw - 20px);
+  width: 100vw;
+}
+.arrow-drop-img {
+  object-fit: contain;
+  width: 100%;
+}
+@keyframes jumping {
+  from {
+    top: 90%;
+  }
+  to {
+    top: 84%;
+  }
+}
+
+.jump {
+  animation: jumping 2s infinite alternate ease-in-out;
+}
+.jump:hover {
+  animation-play-state: paused;
+}
+/* All sections container style */
+.all-sections {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/images/secondbg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-heading {
+  font-size: 36px;
+  padding: 80px 0;
+}
+/* About me section style */
+.info-group-head {
+  display: inline-block;
+  min-width: 105px;
+  margin-right: 40px;
+}
+.ab-img {
+  z-index: 1;
+  position: relative;
+}
+.ab-img-after {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  height: calc(100% + 40px);
+  width: 70%;
+  background-color: var(--accent-color);
+}
+/* My acheivements section style */
+.cat-circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid #e66c28;
+}
+/* Song section style */
+/* Latest Tracks section style */
+.latest-track-info {
+  background-color: #0d0c0c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.progress-group {
+  height: 100%;
+}
+.control-icon {
+  height: 30px;
+  width: 30px;
+}
+.control-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+}
+.whole-progress-bar {
+  min-width: clamp(75px, 15vw, 150px);
+  background-color: rgba(230, 108, 40, 0.5);
+}
+.active-progress-bar {
+  background-color: var(--accent-color);
+}
+/* Get in touch section style */
+label {
+  position: absolute;
+  top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.form-group {
+  position: relative;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+input:focus + label,
+input:valid + label {
+  top: -12px;
+  font-size: 14px;
+  opacity: 0.7;
+}
