@@ -37,6 +37,28 @@
   .cat-circle img {
     height: 56px;
   }
+  /* Song section */
+  .song-img {
+    height: 402px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .song-img-1 {
+    flex-basis: 350px;
+  }
+  .song-img-2 {
+    flex-basis: 450px;
+  }
+  .song-img-3 {
+    flex-basis: 350px;
+  }
+  .song-img-4 {
+    flex-basis: 584px;
+  }
+  .song-img-5 {
+    flex-basis: 588px;
+  }
+
   /* Latest Track */
   .control-icon {
     height: 40px;

@@ -73,6 +73,9 @@ body {
   height: 100%;
 }
 /* Nav section */
+.navbar {
+  transition: background-color 0.5s ease-in-out;
+}
 .navbar .nav-item > a.nav-link {
   white-space: nowrap;
   color: var(--white);
@@ -81,7 +84,8 @@ body {
   color: var(--accent-color);
   font-weight: 600;
 }
-.section-home {
+.bg-black {
+  background-color: black;
 }
 
 /* Landing section style */
@@ -167,6 +171,28 @@ body {
 /* Song section style */
 .nav-pills .nav-link.active {
   background-color: var(--accent-color);
+}
+.song-img {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.song-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.song-img-after {
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: transform 0.25s ease-in;
+}
+.song-img:hover .song-img-after {
+  transform: translateY(0);
 }
 /* Latest Tracks section style */
 .latest-track-info {
