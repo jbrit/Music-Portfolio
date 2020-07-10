@@ -20,6 +20,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <!-- Tiny Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+    />
+    <!--[if (lt IE 9)
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script
+    ><![endif]-->
     <!-- CSS links-->
     <link
       rel="stylesheet"
@@ -245,174 +253,182 @@
           >
             Latest <span class="highlight">Tracks</span>
           </div>
-          <div class="row mb-5">
-            <div class="col-6 col-md-3 pr-0">
-              <img
-                class="img-fill-container"
-                src="./assets/images/femaleavatar.png"
-                alt=""
-              />
-            </div>
-            <div
-              class="latest-track-info col-6 col-md-9 d-flex flex-column flex-md-row align-items-center pl-3 pl-md-5"
-            >
-              <div class="d-flex flex-column w-100 w-md-75">
-                <div class="latest-track-name f-18 f-md-36 fw-600 mb-3">
-                  Smith May
+          <div class="my-slider">
+            <div class="">
+              <div class="row mb-5">
+                <div class="col-6 col-md-3 pr-0">
+                  <img
+                    class="img-fill-container"
+                    src="./assets/images/femaleavatar.png"
+                    alt=""
+                  />
                 </div>
-                <div class="latest-track-date f-12 f-md-18 mb-4 mb-md-5">
-                  10 March , 2010
-                </div>
-                <div class="latest-track-controls row mb-3 mb-md-0">
-                  <div class="col-12 col-md-auto mb-2">
-                    <span class="control-icon play-icon d-inline-block mr-2"
-                      ><img src="./assets/images/playbtn.svg" alt=""
-                    /></span>
-                    <div
-                      class="progress-group d-inline-flex align-items-center"
-                    >
-                      <div class="progress-bar whole-progress-bar w-100">
-                        <div
-                          class="progress-bar active-progress-bar w-75"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-auto mb-2">
-                    <span
-                      class="control-icon volume-icon d-inline-block mr-2 text-center"
-                      ><img src="./assets/images/volicon.svg" alt="" />
-                    </span>
-                    <div
-                      class="progress-group d-inline-flex align-items-center"
-                    >
-                      <div class="progress-bar whole-progress-bar w-100">
-                        <div
-                          class="progress-bar active-progress-bar w-75"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex flex-column">
-                <a class="btn box-btn f-18 f-md-24 fw-700" href="#"
-                  >Buy Album</a
+                <div
+                  class="latest-track-info col-6 col-md-9 d-flex flex-column flex-md-row align-items-center pl-3 pl-md-5"
                 >
-              </div>
-            </div>
-          </div>
-          <div class="row mb-5">
-            <div class="col-6 col-md-3 pr-0">
-              <img
-                class="img-fill-container"
-                src="./assets/images/femaleavatar.png"
-                alt=""
-              />
-            </div>
-            <div
-              class="latest-track-info col-6 col-md-9 d-flex flex-column flex-md-row align-items-center pl-3 pl-md-5"
-            >
-              <div class="d-flex flex-column w-100 w-md-75">
-                <div class="latest-track-name f-18 f-md-36 fw-600 mb-3">
-                  Smith May
-                </div>
-                <div class="latest-track-date f-12 f-md-18 mb-4 mb-md-5">
-                  10 March , 2010
-                </div>
-                <div class="latest-track-controls row mb-3 mb-md-0">
-                  <div class="col-12 col-md-auto mb-2">
-                    <span class="control-icon play-icon d-inline-block mr-2"
-                      ><img src="./assets/images/playbtn.svg" alt=""
-                    /></span>
-                    <div
-                      class="progress-group d-inline-flex align-items-center"
-                    >
-                      <div class="progress-bar whole-progress-bar w-100">
+                  <div class="d-flex flex-column w-100 w-md-75">
+                    <div class="latest-track-name f-18 f-md-36 fw-600 mb-3">
+                      Smith May
+                    </div>
+                    <div class="latest-track-date f-12 f-md-18 mb-4 mb-md-5">
+                      10 March , 2010
+                    </div>
+                    <div class="latest-track-controls row mb-3 mb-md-0">
+                      <div class="col-12 col-md-auto mb-2">
+                        <span class="control-icon play-icon d-inline-block mr-2"
+                          ><img src="./assets/images/playbtn.svg" alt=""
+                        /></span>
                         <div
-                          class="progress-bar active-progress-bar w-75"
-                        ></div>
+                          class="progress-group d-inline-flex align-items-center"
+                        >
+                          <div class="progress-bar whole-progress-bar w-100">
+                            <div
+                              class="progress-bar active-progress-bar w-75"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-auto mb-2">
+                        <span
+                          class="control-icon volume-icon d-inline-block mr-2 text-center"
+                          ><img src="./assets/images/volicon.svg" alt="" />
+                        </span>
+                        <div
+                          class="progress-group d-inline-flex align-items-center"
+                        >
+                          <div class="progress-bar whole-progress-bar w-100">
+                            <div
+                              class="progress-bar active-progress-bar w-75"
+                            ></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-auto mb-2">
-                    <span
-                      class="control-icon volume-icon d-inline-block mr-2 text-center"
-                      ><img src="./assets/images/volicon.svg" alt="" />
-                    </span>
-                    <div
-                      class="progress-group d-inline-flex align-items-center"
+                  <div class="d-flex flex-column">
+                    <a class="btn box-btn f-18 f-md-24 fw-700" href="#"
+                      >Buy Album</a
                     >
-                      <div class="progress-bar whole-progress-bar w-100">
-                        <div
-                          class="progress-bar active-progress-bar w-75"
-                        ></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column">
-                <a class="btn box-btn f-18 f-md-24 fw-700" href="#"
-                  >Buy Album</a
+            </div>
+            <div class="">
+              <div class="row mb-5">
+                <div class="col-6 col-md-3 pr-0">
+                  <img
+                    class="img-fill-container"
+                    src="./assets/images/femaleavatar.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="latest-track-info col-6 col-md-9 d-flex flex-column flex-md-row align-items-center pl-3 pl-md-5"
                 >
-              </div>
-            </div>
-          </div>
-          <div class="row mb-5">
-            <div class="col-6 col-md-3 pr-0">
-              <img
-                class="img-fill-container"
-                src="./assets/images/femaleavatar.png"
-                alt=""
-              />
-            </div>
-            <div
-              class="latest-track-info col-6 col-md-9 d-flex flex-column flex-md-row align-items-center pl-3 pl-md-5"
-            >
-              <div class="d-flex flex-column w-100 w-md-75">
-                <div class="latest-track-name f-18 f-md-36 fw-600 mb-3">
-                  Smith May
-                </div>
-                <div class="latest-track-date f-12 f-md-18 mb-4 mb-md-5">
-                  10 March , 2010
-                </div>
-                <div class="latest-track-controls row mb-3 mb-md-0">
-                  <div class="col-12 col-md-auto mb-2">
-                    <span class="control-icon play-icon d-inline-block mr-2"
-                      ><img src="./assets/images/playbtn.svg" alt=""
-                    /></span>
-                    <div
-                      class="progress-group d-inline-flex align-items-center"
-                    >
-                      <div class="progress-bar whole-progress-bar w-100">
+                  <div class="d-flex flex-column w-100 w-md-75">
+                    <div class="latest-track-name f-18 f-md-36 fw-600 mb-3">
+                      Smith May
+                    </div>
+                    <div class="latest-track-date f-12 f-md-18 mb-4 mb-md-5">
+                      10 March , 2010
+                    </div>
+                    <div class="latest-track-controls row mb-3 mb-md-0">
+                      <div class="col-12 col-md-auto mb-2">
+                        <span class="control-icon play-icon d-inline-block mr-2"
+                          ><img src="./assets/images/playbtn.svg" alt=""
+                        /></span>
                         <div
-                          class="progress-bar active-progress-bar w-75"
-                        ></div>
+                          class="progress-group d-inline-flex align-items-center"
+                        >
+                          <div class="progress-bar whole-progress-bar w-100">
+                            <div
+                              class="progress-bar active-progress-bar w-75"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-auto mb-2">
+                        <span
+                          class="control-icon volume-icon d-inline-block mr-2 text-center"
+                          ><img src="./assets/images/volicon.svg" alt="" />
+                        </span>
+                        <div
+                          class="progress-group d-inline-flex align-items-center"
+                        >
+                          <div class="progress-bar whole-progress-bar w-100">
+                            <div
+                              class="progress-bar active-progress-bar w-75"
+                            ></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-auto mb-2">
-                    <span
-                      class="control-icon volume-icon d-inline-block mr-2 text-center"
-                      ><img src="./assets/images/volicon.svg" alt="" />
-                    </span>
-                    <div
-                      class="progress-group d-inline-flex align-items-center"
+                  <div class="d-flex flex-column">
+                    <a class="btn box-btn f-18 f-md-24 fw-700" href="#"
+                      >Buy Album</a
                     >
-                      <div class="progress-bar whole-progress-bar w-100">
-                        <div
-                          class="progress-bar active-progress-bar w-75"
-                        ></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column">
-                <a class="btn box-btn f-18 f-md-24 fw-700" href="#"
-                  >Buy Album</a
+            </div>
+            <div class="">
+              <div class="row mb-5">
+                <div class="col-6 col-md-3 pr-0">
+                  <img
+                    class="img-fill-container"
+                    src="./assets/images/femaleavatar.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="latest-track-info col-6 col-md-9 d-flex flex-column flex-md-row align-items-center pl-3 pl-md-5"
                 >
+                  <div class="d-flex flex-column w-100 w-md-75">
+                    <div class="latest-track-name f-18 f-md-36 fw-600 mb-3">
+                      Smith May
+                    </div>
+                    <div class="latest-track-date f-12 f-md-18 mb-4 mb-md-5">
+                      10 March , 2010
+                    </div>
+                    <div class="latest-track-controls row mb-3 mb-md-0">
+                      <div class="col-12 col-md-auto mb-2">
+                        <span class="control-icon play-icon d-inline-block mr-2"
+                          ><img src="./assets/images/playbtn.svg" alt=""
+                        /></span>
+                        <div
+                          class="progress-group d-inline-flex align-items-center"
+                        >
+                          <div class="progress-bar whole-progress-bar w-100">
+                            <div
+                              class="progress-bar active-progress-bar w-75"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-auto mb-2">
+                        <span
+                          class="control-icon volume-icon d-inline-block mr-2 text-center"
+                          ><img src="./assets/images/volicon.svg" alt="" />
+                        </span>
+                        <div
+                          class="progress-group d-inline-flex align-items-center"
+                        >
+                          <div class="progress-bar whole-progress-bar w-100">
+                            <div
+                              class="progress-bar active-progress-bar w-75"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <a class="btn box-btn f-18 f-md-24 fw-700" href="#"
+                      >Buy Album</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -527,6 +543,8 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
