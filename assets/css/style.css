@@ -79,6 +79,7 @@ body {
 .navbar .nav-item > a.nav-link {
   white-space: nowrap;
   color: var(--white);
+  transition: color 0.35s ease, font-weight 0.35s ease;
 }
 .navbar .nav-item.active > a.nav-link {
   color: var(--accent-color);
