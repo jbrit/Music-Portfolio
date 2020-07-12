@@ -88,6 +88,31 @@ body {
 .navbar .nav-item > a.nav-link:hover {
   color: var(--accent-color);
 }
+/* Mobile nav */
+#my-mobile-nav {
+  height: 100vh !important;
+  width: 100vw;
+  background-color: black;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition: transform 1s ease !important;
+}
+/* #my-mobile-nav.collapsing {
+  transform: translateX(0);
+} */
+.navbar-toggler.collapsed ~ #my-mobile-nav {
+  transform: translateX(100%);
+}
+.menu-normal {
+  display: none;
+}
+.collapsed .menu-normal {
+  display: block;
+}
+.collapsed .menu-close {
+  display: none;
+}
 .bg-black {
   background-color: black;
 }

@@ -17,6 +17,10 @@ $(function () {
     controls: false,
     // controlsContainer: ".my-slider-controls",
   });
+  $("#my-mobile-nav").on("show.bs.collapse", function () {
+    $("#my-mobile-nav").removeClass("collapsing");
+    $("#my-mobile-nav").addClass("visi");
+  });
   // Active section
   (() => {
     $(window).scroll(function () {
@@ -28,7 +32,6 @@ $(function () {
           .addClass("bg-black");
       } else {
         $("nav.navbar")
-          .addClass("position-absolute")
           .addClass("mt-2")
           .addClass("mt-md-4")
           .removeClass("bg-black");
@@ -41,7 +44,7 @@ $(function () {
         SectionFourOffset = $("#section-songs").offset().top - 105,
         SectionFiveOffset = $("#section-latesttracks").offset().top - 105,
         SectionSixOffset = $("#section-contact").offset().top - 105;
-      $("nav li").removeClass("active");
+      $("ul .nav-item").removeClass("active");
       if (Scroll >= SectionSixOffset)
         $(".menu-item-6").parent().addClass("active");
       else if (Scroll >= SectionFiveOffset)
